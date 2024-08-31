@@ -1,0 +1,715 @@
+body {
+  margin: 0;
+  padding: 0%;
+  background-color: rgb(255, 255, 255);
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+::selection {
+  color: #fff;
+  background-color: #ff5886;
+}
+
+
+
+
+
+.a-to-hover {
+  padding: 5px;
+}
+.a-to-hover:hover {
+  text-decoration: underline !important ;
+}
+.hidden{
+  display: none;
+  color: #ff5886;
+  font-size: 20px;
+ 
+
+}
+
+.make-nav-big {
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.bothNav {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 1074px;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.left-column {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.right-column {
+  margin: auto;
+}
+
+.yourName {
+  margin: 0;
+  font-size: 20px;
+}
+
+.mainh1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+ 
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.waving-hand {
+  display: inline-block;
+  animation: wave 2s infinite;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: #b4b4b4;
+}
+
+.nav-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #acacac;
+  transition: max-height 0.5s ease-out !important ;
+  overflow: hidden;
+  max-height: 0;
+  
+}
+
+.nav-li {
+  padding: 15px;
+  text-align: left;
+
+  transition: background-color 0.3s;
+}
+.nav-li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-li:hover {
+  background-color: #555;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  bottom: 5px;
+  color: #ff5886;
+}
+p {
+  color: #b4b4b4;
+  padding: 5px;
+}
+.toMakeLive {
+  color: #ff5886;
+}
+.header-section {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2.3rem;
+  padding-left: 2.3rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+}
+.make-big-backgroundcolor {
+  background-color: white;
+}
+/*
+.make-flex-for-text{
+
+  
+} */
+.make-flex-for-img {
+  padding-top: 30px;
+}
+
+.lang-white {
+  color: #1e1c1c;
+}
+.first-btn {
+  background-image: linear-gradient(90deg, #fc5555, #ff5886);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 12px;
+  color: #fff;
+}
+.svg-with-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.socialIcons-display-flex {
+  color: black;
+}
+.socialIcons-display-flex:hover {
+  color: #6560ff;
+}
+
+.all-box {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px 32px;
+  margin-top: -100px;
+}
+.all-box-flex {
+  display: flex;
+}
+
+.box {
+  flex: 2;
+  background-color: #ffffff;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  justify-content: normal;
+  align-items: normal;
+  padding: 100px;
+}
+
+.box-1-background-color {
+  flex: 1;
+  background-color: #6560ff;
+  padding: 178px 32px;
+}
+.box-2-background-color {
+  flex: 1;
+  background-color: #46dfdf;
+  padding: 178px 32px;
+}
+
+.box-3-background-color {
+  flex: 1;
+  background-color: #f2e084;
+  padding: 178px 32px;
+}
+
+.box-4-background-color {
+  flex: 1;
+  background-color: #93e190;
+  padding: 178px 32px;
+}
+
+footer{
+  background-color:#ffffff;
+}
+.all-footer {
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 12rem;
+  padding: 4rem 30px;
+    display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+  .bothNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .right-hamburger {
+    display: flex;
+    justify-content: right;
+    flex: 1;
+    position: relative;
+    left: 80px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.5s;
+  }
+
+  .hamburger.clicked .bar {
+    background-color: purple;
+  }
+
+  .hamburger.clicked .bar:first-child {
+    transform: translateY(13px) rotate(45deg);
+  }
+
+  .hamburger.clicked .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.clicked .bar:last-child {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+
+  /*
+
+.hamburger:hover .bar {
+    background-color: purple; 
+}
+
+.hamburger:hover .bar:first-child {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger:hover .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger:hover .bar:last-child {
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+  */
+
+  .show-link {
+    max-height: 20rem;
+  }
+
+  .right-column {
+    visibility: hidden;
+  }
+  .first-btn {
+    width: 100%;
+    display: inline-block;
+  }
+  .svg-with-btn {
+    display: block;
+  }
+  svg {
+    padding: 20px 10px;
+  }
+  .make-flex-for-img {
+    padding: 0%;
+  }
+  .header-section {
+    display: block;
+    padding: 5px 20px;
+  }
+  .all-box-flex {
+    display: block;
+  }
+  .all-box {
+    gap: 0;
+    padding: 0;
+    margin-top: 0;
+  }
+  .box {
+    padding: 30px 20px;
+  }
+
+  .all-footer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  .foot-2 {
+    display: block;
+  }
+}
+
+/* 
+/* 
+
+.dark-mode{
+  transition: 0.5s ease;
+background-color: #131313;
+.make-nav-big{
+  transition: 0.5s ease;
+  background-color: #131313;
+  .bothNav{
+    transition: 0.5s ease;
+    background-color: #131313;
+    color: white;
+  }
+}
+  .make-big-backgroundcolor{
+    transition: 0.5s ease;
+    background-color: #191919;
+   .header-section{
+    transition: 0.5s ease;
+    background-color: #191919;
+   .mainh1{
+    color: white;
+   }
+    svg{
+      color: white;
+    }
+    svg:hover{
+      color: #ff5886;
+      cursor: pointer;
+    }
+    
+  }
+}
+
+.box{
+  transition: 0.5s ease;
+  background-color:#272727;
+  h2{
+    color: white;
+  }
+}
+footer{
+  transition: 0.5s ease;
+  background-color: #272727;
+.all-footer{
+  transition: 0.5 ease;
+  background-color: #272727;
+  h1{
+    color: white;
+  }
+  h3{
+    color: white;
+  }
+}
+}
+
+
+@media only screen and (max-width: 800px) {
+
+.moon{
+  display: none;
+}
+.sun{
+  display: none;
+}
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: 0.5s;
+  }
+
+  .hamburger.clicked .bar {
+    background-color: purple;
+  }
+}  
+} */
+/* 
+
+.dark-mode{
+  transition: 0.5s ease;
+background-color: #131313;
+.make-nav-big{
+  transition: 0.5s ease;
+  background-color: #131313;
+  .bothNav{
+    transition: 0.5s ease;
+    background-color: #131313;
+    color: white;
+  }
+}
+  .make-big-backgroundcolor{
+    transition: 0.5s ease;
+    background-color: #191919;
+   .header-section{
+    transition: 0.5s ease;
+    background-color: #191919;
+   .mainh1{
+    color: white;
+   }
+    svg{
+      color: white;
+    }
+    svg:hover{
+      color: #ff5886;
+      cursor: pointer;
+    }
+    
+  }
+}
+
+.box{
+  transition: 0.5s ease;
+  background-color:#272727;
+  h2{
+    color: white;
+  }
+}
+footer{
+  transition: 0.5s ease;
+  background-color: #272727;
+.all-footer{
+  transition: 0.5 ease;
+  background-color: #272727;
+  h1{
+    color: white;
+  }
+  h3{
+    color: white;
+  }
+}
+}
+
+
+@media only screen and (max-width: 800px) {
+
+.moon{
+  display: none;
+}
+.sun{
+  display: none;
+}
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: 0.5s;
+  }
+
+  .hamburger.clicked .bar {
+    background-color: purple;
+  }
+}  
+}  */
+
+.dark-mode * {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+/* Base styles for dark mode */
+.dark-mode {
+  background-color: #131313;
+}
+
+/* Styles for navigation when expanded in dark mode */
+.dark-mode .make-nav-big {
+  background-color: #131313;
+}
+
+/* Styles for both navigation elements in dark mode */
+.dark-mode .bothNav {
+  background-color: #131313;
+  color: white;
+}
+
+/* Styles for the expanded background in dark mode */
+.dark-mode .make-big-backgroundcolor {
+  background-color: #191919;
+}
+
+/* Styles for the header section in dark mode */
+.dark-mode .header-section {
+  background-color: #191919;
+}
+
+/* Styles for the main heading (h1) in dark mode */
+.dark-mode .mainh1 {
+  color: white;
+}
+
+/* Styles for SVG icons in dark mode */
+.dark-mode svg {
+  color: white;
+}
+
+/* Hover styles for SVG icons in dark mode */
+.dark-mode svg:hover {
+  color: #ff5886;
+  cursor: pointer;
+}
+
+/* Box styles in dark mode */
+.dark-mode .box {
+  background-color: #272727;
+}
+
+/* Heading (h2) inside box in dark mode */
+.dark-mode .box h2 {
+  color: white;
+}
+
+/* Footer styles in dark mode */
+.dark-mode footer {
+  background-color: #272727;
+}
+
+/* All footer content in dark mode */
+.dark-mode .all-footer {
+  background-color: #272727;
+}
+
+/* Headings inside footer in dark mode */
+.dark-mode .all-footer h1,
+.dark-mode .all-footer h3 {
+  color: white;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 800px) {
+  /* Hide moon and sun icons */
+  .moon, .sun {
+    display: none;
+  }
+
+  /* Hamburger menu styles */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+  }
+
+  /* Bar inside the hamburger menu */
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: 0.5s;
+  }
+
+  /* Change color of bars when hamburger is clicked */
+  .hamburger.clicked .bar {
+    background-color: purple;
+  }
+}
+.dark-mode .lang-white{
+  color: white;
+}
+
+
+
+
+.toggle-dark-light{
+  display: flex;
+  justify-content: right;
+
+}
+
+
+label{
+  width: 80px;
+  height: 30px;
+  position: sticky;
+  top: 2%;
+  display: block;
+  background: white;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px black, inset 0px -5px 15px rgb(182, 182, 182);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+label:after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  border-radius: 80px;
+  box-shadow: 0px 5px 10px black;
+  transition: 0.3s;
+}
+input{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+input:checked + label{
+ background: rgb(26, 25, 25);
+}
+
+input:checked+label:after{
+  left: 70px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg,rgb(161, 160, 160),rgb(87, 83, 83));
+}
+
+label:active::after{
+  width: 30px;
+}
+
+label svg{
+  position: absolute;
+  width:85px ;
+  top: 5px;
+  display: none;
+}
+label svg.sun{
+right:  28px;
+fill: white;
+transition: 0.3s;
+}
+label svg.moon{
+left: 26px ;
+fill: rgb(247, 247, 247);
+transition: 0.3s;
+}
+
+
